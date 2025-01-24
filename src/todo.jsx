@@ -151,7 +151,7 @@ export function Todo() {
                 {getCompleted} of {completedTodo} is completed
               </p>
 
-            <button onClick={clearCompleted}>Clear Completed </button>
+            <button onClick={clearCompleted} className="clear">Clear Completed </button>
             </div>
             <p className="p">No tasks yet. Add one above!</p>
           </div>
