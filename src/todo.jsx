@@ -7,6 +7,8 @@ export function Todo() {
 
   const [error, setError] = useState(false);
 
+  
+
   const [inputValue, setInputValue] = useState("");
 
   const [filterState, setFilterState] = useState("ALL");
@@ -40,6 +42,7 @@ export function Todo() {
   console.log(todos);
 
   const handleDeleteTodo = (todo) => {
+    alert("Устгамаар байна уу?")
     const newTodos = [...todos];
     newTodos.splice(todo, 1);
     setTodos(newTodos);
@@ -107,6 +110,7 @@ export function Todo() {
               >
                 COMPLETED
               </button>
+              
             </div>
             <div className="filter-container">
               {todos
